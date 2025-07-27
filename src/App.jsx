@@ -49,18 +49,26 @@ function App() {
   };
 
   return (
-    <div style={{ padding: "2rem", fontFamily: "Arial, sans-serif", maxWidth: "600px", margin: "auto" }}>
-      <h1>Chat-Bot</h1>
+    <div style={{
+      padding: "2rem",
+      fontFamily: "Arial, sans-serif",
+      maxWidth: "600px",
+      border: "2px solid white",
+      //alignItems: "center",
+      //justifyContent: "center",
+      margin: "auto"
+    }}>
+      <h1>Gemini Test Bot</h1>
 
       <div
         style={{
           maxHeight: "400px",
           overflowY: "auto",
           marginBottom: "1rem",
-          border: "1px solid #ddd",
+          border: "2px solid green",
           padding: "1rem",
           borderRadius: "8px",
-          backgroundColor: "blue",
+          backgroundColor: "black",
         }}
       >
         {chatHistory.map((msg, idx) => (
@@ -77,7 +85,7 @@ function App() {
           onChange={(e) => setUserInput(e.target.value)}
           onKeyDown={handleKeyDown}
           placeholder="Ask me anything..."
-          style={{ width: "300px", padding: "0.5rem", marginRight: "1rem" }}
+          style={{ width: "365px", padding: "0.5rem", marginRight: "1rem" }}
           disabled={isLoading || isPaused}
         />
 
