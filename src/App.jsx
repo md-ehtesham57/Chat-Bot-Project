@@ -53,7 +53,6 @@ function App() {
       padding: "2rem",
       fontFamily: "Arial, sans-serif",
       maxWidth: "600px",
-      border: "2px solid white",
       //alignItems: "center",
       //justifyContent: "center",
       margin: "auto"
